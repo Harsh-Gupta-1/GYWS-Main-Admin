@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import { createContext } from 'react';
 import Daksha from "./Rise_assets/Daksha.png"
 import Pace from "./Rise_assets/Pace.png"
 import JVM from "./Rise_assets/JVM.jpg"

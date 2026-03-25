@@ -1,12 +1,5 @@
 import './Foundersmsg.css';
 
-
-import {
-  Facebook,
-  Linkedin,
-  EnvelopeFill,
-} from 'react-bootstrap-icons';
-import HCard from '../../HeaderCard/HCard';
 export default function Foundersmsg() {
 
   return (
