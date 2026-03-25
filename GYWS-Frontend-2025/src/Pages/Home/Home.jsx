@@ -8,7 +8,6 @@ import Impact from "../../Components/Homepage/impact/Impact";
 import ContactUs from "../../Components/Homepage/ContactUs/ContactUs";
 import Carousel from "../../Components/Homepage/sponsor/SponsorSlider"
 import TestiMonial from "../../Components/Homepage/Testimonial/Testimonial";
-// import SomeChildComponent from "../../utils/someChildComponent/SomeChildComponent";
 
 function Home() {
 
@@ -30,7 +29,6 @@ function Home() {
         <GuestPage />
         <Carousel />
         <ContactUs />
-        {/* <SomeChildComponent /> */}
       </div>
     </>
   );

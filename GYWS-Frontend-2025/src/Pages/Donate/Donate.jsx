@@ -2,12 +2,6 @@ import React, { useEffect } from "react";
 import "./Donate.css";
 import { Link } from "react-router-dom";
 import TextCard from '../../Components/HeaderCard/HCard'
-// import Modal from "../../Components/Donation/Modal";
-// import Each from "../../Components/Donation/Each_JVMCare";
-// import HostelConstruction from "../../Components/Donation/Hostel_Contruction";
-// import HostelSustainability from "../../Components/Donation/Hostel_Sustainability";
-// import LightDonate from "../../Components/Donation/lightdonate/LightDonate";
-// import DonateModal from "../../Components/Donation/DonateModal";
 
 const DonateLinks = [
   {
@@ -45,14 +39,6 @@ const DonateLinks = [
 ];
 
 const DonateCard = ({ name, imgPath, discr, eventlink }) => {
-
-
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // const modalHandler = () => {
-  //   setIsModalOpen(!isModalOpen);
-  // }
-
   return (
     <>
       <div className="blog-item">
@@ -79,18 +65,14 @@ const DonateCard = ({ name, imgPath, discr, eventlink }) => {
 
 function Donate() {
 
-
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Donate | GYWS"
   }, [])
 
-
-
   return (
     <>
       <div className="donate-page-container">
-        {/* <DonateModal /> */}
         <br />
         <TextCard head="Donate Now"></TextCard>
         <br />

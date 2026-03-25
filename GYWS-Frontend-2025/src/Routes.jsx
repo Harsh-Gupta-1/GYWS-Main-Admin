@@ -2,13 +2,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home.jsx';
 import Media from './Pages/Media/Media.jsx';
-// import Member from './Components/Members/Members2025-26/Members.jsx';
-// import Members2425 from './Components/Members/Members2024-25/Members.jsx'
-// import Members2324 from './Components/Members/Members2023-24/Members.jsx'
-// import Members2223 from './Components/Members/Members2022-23/Members.jsx'
-// import Members2122 from './Components/Members/Members2021-22/Members.jsx'
-// import Members2021 from './Components/Members/Members2020-21/Members.jsx'
-// import Members2020 from './Components/Members/Members2019-20/Members.jsx'
 import Members from './Components/Members/Members.jsx';
 import About from './Pages/AboutUs/About.jsx';
 import JVM from './Components/Initiatives/JVM_PAGE/JVM.jsx';
@@ -19,19 +12,13 @@ import HostelSus from './Components/Donation/Hostel_Sustainability.jsx'
 import Donate from './Pages/Donate/Donate.jsx'
 import Mailer from './Components/Mailer-Tool/Mailer.jsx'
 import Rise from './Components/Rise/Rise.jsx';
+
 export default function NavRoutes() {
     return (
         <>
             <Routes>
                 <Route path="/*" element={<Home />} />
                 <Route path="/media" element={<Media />} />
-                {/* <Route path="/member/*" element={<Member />} />
-                <Route path="/member/members2024-25/*" element={<Members2425 />} />
-                <Route path="/member/members2023-24/*" element={<Members2324 />} />
-                <Route path="/member/members2022-23/*" element={<Members2223 />} />
-                <Route path="/member/members2021-22/*" element={<Members2122 />} />
-                <Route path="/member/members2020-21/*" element={<Members2021 />} />
-                <Route path="/member/members2019-20/*" element={<Members2020 />} /> */}
                 <Route path="/member/*" element={<Members />} />
                 <Route path="/jvm" element={<JVM />} />
                 <Route path="/about" element={<About />} />
@@ -46,4 +33,4 @@ export default function NavRoutes() {
             </Routes>
         </>
     )
-}
+}
