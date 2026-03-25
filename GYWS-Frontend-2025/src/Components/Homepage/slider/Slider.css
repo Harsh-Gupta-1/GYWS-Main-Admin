@@ -1,0 +1,75 @@
+.carousel.carousel-slider .control-arrow {
+    background-color: transparent !important;
+    opacity: 1 !important;
+    /* height: 40px !important; */
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid#f26a36 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid#f26a36 !important;
+}
+.home-carousel-item {
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 1rem 2rem; */
+}
+
+.home-carousel-item-image {
+    height: 100%;
+    width: 100%;
+    /* border-radius: 1rem; */
+    overflow: hidden;
+}
+
+.home-carousel-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    font-size: 35px;
+    background: rgba(0, 0, 0, 0.468);
+    color: #fff;
+    padding: 0px 25px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+    .home-carousel-item {
+        height: 400px !important;
+    }
+    .message{
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-carousel-item {
+        height: calc(90vh - 80px);
+    }
+    .message{
+        font-size: 23px !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .message{
+        font-size: 30px !important;
+    }
+}

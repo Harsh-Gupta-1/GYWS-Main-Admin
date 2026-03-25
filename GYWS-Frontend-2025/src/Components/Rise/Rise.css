@@ -1,0 +1,303 @@
+
+.rise-content{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow: clip;
+    font-weight: 600;
+}
+
+.rise-header{
+    position: relative;
+}
+
+.rise-bg{
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    filter: brightness(70%);
+}
+.rise-header_content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rise-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rise-name{
+    font-weight: bold;
+    color: white;
+    font-size: 5rem;
+    margin-top:6%;
+    text-shadow: 2px 2px 4px #000000;
+    display: flex;
+}
+
+.rise-heading {
+    position: absolute;
+    top: 10px;
+    align-items: center;
+}
+.rise-fullform{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 260%;
+    margin-top: 20px;
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+.rise-fullform>p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+.rise-R {
+    margin-right: -30px;
+    /* Tailwind: mr-[-15px] */
+}
+
+.rise-S{
+    margin-right: 1rem;
+    /* Tailwind: mr-4 */
+    margin-left: -15px;
+    /* Tailwind: ml-[-15px] */
+}
+
+.rise-E {
+    margin-right: 1rem;
+    /* Tailwind: mr-4 */
+}
+
+.rise-aim {
+    margin-top: 40px;
+    display: flex;
+    /* border: 6px solid #0000FF; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    gap: 2%;
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); */
+    /* transition: transform 0.5s, box-shadow 0.5s;
+    margin-bottom: 2rem; */
+  
+}
+
+.rise-image1 {
+    width: 150px;
+}
+
+.rise-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+.rise-head {
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: rgba(242,106,54,255);
+}
+
+.rise-image2 {
+    width: 50%;
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px #0000001a;
+}
+
+.rise-heading2 {
+    color: rgba(242,106,54,255);
+    font-weight: bold;
+    font-size: 1.875rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.rise-initiatives {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rise-card:hover {
+    box-shadow: 5px 5px  25px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+}
+
+.rise-card {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+    border-width: 3px;
+    padding: 24px;
+    border-radius: 24px;
+    margin: 24px auto;
+    cursor: pointer;
+    width: 60%;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.rise-cardimage {
+    border-radius: 8px;
+    border-color: black;
+    height: 250px;
+    width: 50%;
+}
+
+.rise-cardtext {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rise-cardtitle {
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.rise-card_desc{
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.rise-blue {
+    border-color: #05a1c7;
+}
+.rise-blue:hover{
+    box-shadow: 0 0 10px #05a0c749;
+}
+
+.rise-orange{
+        border-color: #f26b36;
+     
+}
+.rise-orange:hover{
+    box-shadow: 0 0 10px #f75b1dd6; 
+}
+.rise-green{
+    border-color:#73c48f; 
+  font: fallback;
+}
+.rise-green:hover{
+box-shadow: 0 0 10px #41a363; 
+}
+
+.rise-yellow{
+ border-color: #fed136; 
+}
+.rise-yellow:hover{
+    box-shadow: 0 0 10px #ffcd1a; 
+    }
+.rise-purple{
+    border-color: #695e91;
+}
+.rise-purple:hover{
+    box-shadow: 0 0 10px #695e91; 
+    }
+.rise-titleblue{
+    color: #05a1c7;
+}
+.rise-titleyellow{
+    color: #fed136;
+}
+.rise-titlegreen{
+    color: #73c48f;
+}
+.rise-titleorange{
+    color:#f26a36;
+}
+.rise-titlepurple{
+    color:#695e91;
+}
+.rise-btn{
+    padding: 10px;
+    border-radius:15px;
+    margin: 10px 0px;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+.rise-btn:hover{
+    transform: scale(1.08);
+}
+.rise-blue-btn{
+    background-color: #05a1c7;
+}
+.rise-green-btn{
+    background-color: #73c48f;
+}
+.rise-yellow-btn{
+    background-color: #fed136;
+}
+.rise-orange-btn{
+    background-color: #f26a36;
+    display: none;
+}
+.rise-purple-btn{
+    background-color: #695e91;
+    display: none;
+}
+.rise-card_desccol{
+    flex-direction: row;
+}
+
+.rise-colreverse{
+    flex-direction: row-reverse
+}
+.rise-card_desc{
+    flex-direction: row-reverse;
+}
+@media screen and (max-width:850px) {
+    .rise-card{
+        width: 90%;
+        flex-direction: column;
+        padding: 24px;
+    }
+    .rise-cardimage{
+        width: 100%;
+    }
+    .rise-cardtext{
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .rise-aim{
+     flex-direction: column;
+     width: 95%;
+    }
+    .rise-image1 {
+        width: 100px;
+    }
+    .rise-image2 {
+        width: 98%;
+        height: 200px;
+        margin:auto
+    }
+    .rise-text{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .rise-header_content,.rise-fullform{
+        font-size: 120%;
+    }
+}

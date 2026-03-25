@@ -1,0 +1,157 @@
+.container {
+    display: grid;
+    /* border: solid red; */
+    grid-template-columns: 50% 50%;
+    max-width: 1200px;
+    min-height: 70vh;
+    margin: auto;
+    /* height: 80vh; */
+    margin: 1rem auto;
+}
+
+.box1,
+.box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 img,
+.box4 img {
+    width: 200px;
+}
+
+.box2,
+.box3 {
+    /* border: solid rgb(25, 0, 255); */
+    padding: 1rem;
+    margin: auto;
+    text-align: justify;
+}
+
+.box2 .heading,
+.box3 .heading {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.box2 .heading {
+    color: #F16A36;
+}
+
+.box3 .heading {
+    color: #05A1C7;
+}
+
+.box2 h2,
+.box3 h2 {
+    margin-left: 10px;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+#mission {
+    padding: 1.4rem;
+    background-color: #F16A36;
+
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+
+    transition: all 0.15s ease-out;
+}
+
+#vision {
+
+    padding: 1.4rem;
+    background-color: #05A1C7;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+
+    transition: all 0.15s ease-in-out;
+}
+
+#mission:hover,
+#vision:hover {
+    transform: scale(1.01);
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 1rem;
+
+}
+
+#mission button,
+#vision button {
+    border: solid #F9EE34;
+    padding: 0.3rem;
+    background-color: #F9EE34;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-out;
+}
+
+#mission button:hover,
+#vision button:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 0px #73C48F;
+}
+
+@media (max-width: 540px) {
+
+    #mission,
+    #vision {
+        width: 280px m !important;
+    }
+
+    .box2,
+    .box4 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 612px) {
+
+    #mission,
+    #vision {
+        width: 340px !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .box2,
+    .box3 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .box1 img,
+    .box4 img {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+    }
+
+    #mission,
+    #vision {
+        width: 450px;
+    }
+}

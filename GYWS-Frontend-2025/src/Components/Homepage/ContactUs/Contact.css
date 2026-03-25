@@ -1,0 +1,263 @@
+.contactUs {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto 4rem;
+    padding: 0.6rem;
+    
+}
+
+.contactUs .box {
+    background-color: #fff;
+
+}
+
+.form {
+    grid-area: form;
+    box-shadow: 0 5px 35px rgpa(0, 0, 0, 0.5);
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    box-shadow: 0 5px 35px rgpa(0, 0, 0, 0.15);
+}
+
+
+.contactUs .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    margin-top: 20px;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.contact h3 {
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+
+}
+
+.formBox {
+    position: 100%;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+
+.inputBox span {
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #202020;
+    border-radius: 5px;
+    font-family: 'Montserrat', 'Open Sans', 'Poppins', sans-serif;
+}
+
+.inputBox textarea {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #202020;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', 'Open Sans', 'Poppins', sans-serif;
+}
+
+
+
+
+.inputBox button[type="submit"] {
+    background: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    min-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+}
+
+.info {
+    background: #ffc107;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .infobox div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  
+}
+
+.info .infobox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5 em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infobox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.info .infobox div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #332a2a;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.map {
+    padding: 0px;
+    width: 100%;
+    height: 100%
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:991px) {
+    .contactUs {
+        padding: 15px;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form"
+            "info"
+            "map";
+    }
+
+    .map {
+        min-height: 300px;
+    }
+
+    .formBox .row50 {
+        display: flex;
+        gap: 1.5px;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+   
+
+    .map {
+        min-width: 300px;
+        padding: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contactUs .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form"
+            "info"
+            "map"
+    }
+    .contact{
+        padding: 10px;
+    }
+    .contact.form {
+        grid-template-columns: 1fr;
+    }
+
+    /* .inputBox{
+        height: 50px;
+    } */
+    .inputBox textarea {
+        height: 50px;
+    }
+
+
+
+}
