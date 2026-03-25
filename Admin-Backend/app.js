@@ -13,15 +13,7 @@ dotenv.config();
 // Initialize express
 const app = express();
 
-app.use(cors({
-  origin: true,           // reflect the request origin → allows any origin with credentials
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
-
-// Handle preflight explicitly so Vercel never short-circuits it
-app.options('*', cors());
+app.use(cors());
 
 app.use(express.json());
 
