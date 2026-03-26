@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Routes, Route, Link, useParams, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
 import "./Members.css";
 import logo from "./hands.png";
 import { membersAPI } from "./utils/apiService";
@@ -163,6 +163,7 @@ function Members() {
     };
 
     fetchYears();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Update currentYear when URL changes
@@ -174,6 +175,7 @@ function Members() {
         checkTeamAvailability(urlYear);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname, availableYears]);
 
   useEffect(() => {

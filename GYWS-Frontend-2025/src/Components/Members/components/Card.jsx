@@ -4,7 +4,7 @@ import { Linkedin, Facebook, EnvelopeFill } from 'react-bootstrap-icons'
 function Card({ imageUrl, name, position, facebookLink, email, linkedinLink, data }) {
   // Helper function to check if a social link is valid (not empty, not "#", not null/undefined)
   const isValidLink = (link) => {
-    return link && link.trim() !="" && link !== "#";
+    return link && link.trim() !=="" && link !== "#";
   };
 
   const hasFacebook = isValidLink(facebookLink);
